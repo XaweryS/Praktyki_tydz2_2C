@@ -2,7 +2,7 @@
   <div class="galeria">
     <h1>Galeria zdjęć</h1>
     <div class="gp">
-      <div v-for="(zdj, i ) in zdj" :key="i" class="wz">
+      <div v-for="(zdj, i) in zdj" :key="i" class="wz">
         <img :src="zdj.url" :alt="zdj.title" />
         <p>{{ zdj.title }}</p>
       </div>
