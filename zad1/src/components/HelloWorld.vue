@@ -27,6 +27,7 @@ export default {
 <style>
 .galeria{
   text-align: center;
+  background-color: black;
 }
 .gp{
   display: grid;
@@ -47,6 +48,6 @@ img{
 p{
   margin: 0;
   padding: 15px;
-  background-color: white;
+  background-color: black;
 }
 </style>

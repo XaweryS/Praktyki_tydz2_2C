@@ -16,6 +16,9 @@ export default {
 </script>
 
 <style>
+body{
+  background-color: black;
+}
 #app {
   font-family: italic;
   text-align: center;
