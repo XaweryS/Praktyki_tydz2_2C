@@ -17,9 +17,9 @@ export default {
 
 <style>
 #app {
-  font-family: sans-serif;
+  font-family: italic;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #1B44E6;
+  margin-top: 180px;
 }
 </style>
