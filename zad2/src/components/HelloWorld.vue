@@ -1,6 +1,6 @@
 <template>
   <div class="przycisk">
-    <button @click="handleClick">Przycisk {{ i + 1 }}</button>
+    <button @click="kl">Przycisk {{ i + 1 }}</button>
     <p>Liczba: {{ licz }}</p>
   </div>
 </template>
@@ -12,7 +12,7 @@ export default {
     licz: Number 
   },
   methods: {
-    handleClick() {
+    kl() {
       this.$emit('dziala');
     }
   }
