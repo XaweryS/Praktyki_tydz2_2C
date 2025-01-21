@@ -1,33 +1,32 @@
 <template>
-  <div class="button-wrapper">
-    <button @click="handleClick">Przycisk {{ index + 1 }}</button>
-    <p>Licznik: {{ counter }}</p>
+  <div class="przycisk">
+    <button @click="handleClick">Przycisk {{ i + 1 }}</button>
+    <p>Liczba: {{ licz }}</p>
   </div>
 </template>
-
 <script>
 export default {
   name: 'HelloWorld',
   props: {
-    index: Number, // Indeks przycisku
-    counter: Number // Wartość licznika
+    i: Number, 
+    licz: Number 
   },
   methods: {
     handleClick() {
-      // Emitujemy zdarzenie do rodzica (App.vue)
-      this.$emit('increment');
+      this.$emit('dziala');
     }
   }
 };
 </script>
-
-<style scoped>
-.button-wrapper {
+<style>
+.przycisk {
   text-align: center;
 }
 button {
+  margin-top: 20px;
+  margin-left: 20px;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 20px;
   cursor: pointer;
 }
 </style>

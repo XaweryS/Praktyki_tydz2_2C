@@ -1,15 +1,14 @@
 <template>
   <div id="app">
     <div class="button-container">
-      <HelloWorld v-for="(counter, index) in counters" 
-                  :key="index" 
-                  :index="index"
-                  :counter="counter"
-                  @increment="increment(index)" />
+      <HelloWorld v-for="(licz, i) in licz2" 
+        :key="i" 
+        :i="i"
+        :licz="licz"
+        @dziala="increment(i)" />
     </div>
   </div>
 </template>
-
 <script>
 import HelloWorld from './components/HelloWorld.vue';
 
@@ -20,25 +19,24 @@ export default {
   },
   data() {
     return {
-      // Inicjalizujemy tablicę z 20 licznikami
-      counters: Array(20).fill(0)
+      licz2: Array(20).fill(0)
     };
   },
   methods: {
-    increment(index) {
-      // Zwiększamy licznik o 1 dla danego indeksu
-      this.counters[index]++;
+    increment(i) {
+      this.licz2[i]++;
     }
   }
 };
 </script>
-
 <style>
 .button-container {
+  border: 3px solid black;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  max-width: 600px;
-  margin: 20px auto;
+  grid-template-columns: repeat(4, 150px);
+  gap: 30px;
+  width: 710px;
+  margin: 100px auto;
+  border-radius: 10px;
 }
 </style>
