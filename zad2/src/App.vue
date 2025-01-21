@@ -1,26 +1,44 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <div class="button-container">
+      <HelloWorld v-for="(counter, index) in counters" 
+                  :key="index" 
+                  :index="index"
+                  :counter="counter"
+                  @increment="increment(index)" />
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from './components/HelloWorld.vue';
 
 export default {
   name: 'App',
   components: {
     HelloWorld
+  },
+  data() {
+    return {
+      // Inicjalizujemy tablicę z 20 licznikami
+      counters: Array(20).fill(0)
+    };
+  },
+  methods: {
+    increment(index) {
+      // Zwiększamy licznik o 1 dla danego indeksu
+      this.counters[index]++;
+    }
   }
-}
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  max-width: 600px;
+  margin: 20px auto;
 }
 </style>
