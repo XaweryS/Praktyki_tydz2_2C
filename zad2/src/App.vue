@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="button-container">
+    <div class="prz">
       <HelloWorld v-for="(licz, i) in licz2" 
         :key="i" 
         :i="i"
@@ -30,7 +30,7 @@ export default {
 };
 </script>
 <style>
-.button-container {
+.prz{
   border: 3px solid black;
   display: grid;
   grid-template-columns: repeat(4, 150px);
