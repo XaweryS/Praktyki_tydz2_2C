@@ -39,4 +39,4 @@ export default {
   margin: 100px auto;
   border-radius: 10px;
 }
-</style>
+</style>a
