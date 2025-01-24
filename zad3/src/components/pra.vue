@@ -14,5 +14,6 @@ export default {
 .pp {
   background-color: burlywood;
   padding: 10px;
+  float: right;
 }
 </style>

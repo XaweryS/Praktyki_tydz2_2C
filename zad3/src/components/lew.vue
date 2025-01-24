@@ -14,6 +14,5 @@ export default {
 .lp {
   background-color: burlywood;
   padding: 10px;
-
 }
 </style>

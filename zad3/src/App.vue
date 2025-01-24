@@ -31,7 +31,6 @@ export default {
 
 <style>
 .sg {
-  display: flex;
   flex-direction: column;
   height: 1010px;
 }
