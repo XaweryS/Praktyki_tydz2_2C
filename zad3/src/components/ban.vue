@@ -10,7 +10,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .ban {
   background-color: greenyellow;
   color: black;

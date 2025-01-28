@@ -10,7 +10,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .sro {
   padding: 10px;
   background-color: wheat;

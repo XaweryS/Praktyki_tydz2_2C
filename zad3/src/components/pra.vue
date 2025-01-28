@@ -10,7 +10,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .pp {
   background-color: burlywood;
   padding: 10px;

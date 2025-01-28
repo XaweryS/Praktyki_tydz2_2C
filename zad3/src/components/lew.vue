@@ -10,7 +10,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .lp {
   background-color: burlywood;
   padding: 10px;
