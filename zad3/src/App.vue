@@ -35,7 +35,7 @@ export default {
   height: 1010px;
 }
 .srod {
-  display: flex;
+  display: flex;a
 }
 .lp, .pp {
   width: 20%;
