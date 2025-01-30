@@ -32,9 +32,6 @@ export default {
 <style>
 .prz{
   border: 3px solid black;
-  display: grid;
-  grid-template-columns: repeat(4, 150px);
-  gap: 30px;
   width: 710px;
   margin: 100px auto;
   border-radius: 10px;
